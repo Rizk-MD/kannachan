@@ -695,7 +695,7 @@ export async function participantsUpdate({ id, participants, action }) {
                             })
     this.sendHydrated(id, text, '➞' + await this.getName(id), await (await fetch((action == 'add' ? wel : lea))).buffer(), sgc, (action == 'add' ? '💌 WELCOME' : '🐾 BYE'), user.split`@`[0], '🌹 USER', [
       ['ᴍᴇɴᴜ', '/menu'],
-      [(action == 'add' ? '\n\nYAELAH BEBAN GROUP NAMBAH 1 :(' : '\n\nBYE BEBAN! :)'), '...'],
+      [(action == 'add' ? '\n\nWelcome @user' : '\n\n Sayonaraa @user'), '...'],
       [null, null]
     ], null, false, { mentions: [user] })
                     }
